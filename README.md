@@ -1,27 +1,14 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# bnb-ruechappe, a svelte app
 
----
+This is a project based on the template for [Svelte](https://svelte.dev) apps that lives at https://github.com/sveltejs/template.
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
+To create a new project based on this template using [degit](https://github.com/Ric
 ## Get started
 
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd bnb-ruechappe
 npm install
 ```
 
@@ -31,11 +18,7 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-
+Navigate to [localhost:5000](http://localhost:5000). You should see your app running.
 ## Building and running in production mode
 
 To create an optimised version of the app:

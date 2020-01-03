@@ -1,5 +1,7 @@
 <script>
 	import Banner from "./banner.svelte"
+	import topics from './topics.json'
+	$: console.log(typeof title)
 	export let name;
 </script>
 
@@ -7,6 +9,13 @@
 	<Banner />
 	<div class="cards">
 		<!-- TODO:  -->
+		<ul>
+			{#each topics as {userId, id, title, body} }
+			<li>
+			<b>{id} {title}:</b> {body}
+			</li>
+			{/each}
+		</ul>
 	</div>
 </main>
 

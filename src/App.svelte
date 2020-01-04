@@ -1,42 +1,47 @@
 <script>
-	import Banner from "./banner.svelte"
-	import topics from './topics.json'
-	$: console.log(typeof title)
-	export let name;
+  import Header from "./header.svelte"
+  import Footer from "./footer.svelte"
+  import Card from "./card.svelte"
+  import cards from './cards.json'
+  $: console.log(typeof title)
 </script>
 
 <main>
-	<Banner />
-	<div class="cards">
-		<!-- TODO:  -->
-		<ul>
-			{#each topics as {userId, id, title, body} }
-			<li>
-			<b>{id} {title}:</b> {body}
-			</li>
-			{/each}
-		</ul>
-	</div>
+  <Header />
+  <div class="cards">
+    <!-- TODO:  -->
+      {#each cards as {title, body} }
+      <Card>
+      <span slot="title">{title}</span>
+      <span slot="body">{body}</span>
+      </Card>
+      {/each}
+  </div>
+  <Footer />
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+  main {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    min-height: calc(100vh - 8em); /* removes header and footer height */
+    margin: 0;
+    padding: 0;
+    }
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  .cards ul li {
+    list-style: none;
+  }
+
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
 </style>

@@ -1,4 +1,7 @@
 <style>
+  .card {
+    margin: 10px;
+  }
 </style>
 <div class="card">
   <b><slot name="title"></slot></b><br />

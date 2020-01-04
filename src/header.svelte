@@ -3,8 +3,7 @@
     background-image: url('../assets/chappe.jpg');
     /* TODO: Add some form of parallax here */
     background-size: 100%;
-    height: 5em;
-    width: 100%;
+    height: 6em;
   }
 
   h1 {

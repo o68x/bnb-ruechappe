@@ -9,7 +9,6 @@
 <main>
   <Header />
   <div class="cards">
-    <!-- TODO:  -->
       {#each cards as {title, body} }
       <Card>
       <span slot="title">{title}</span>
@@ -22,13 +21,17 @@
 
 <style>
   main {
-    max-width: 240px;
     margin: 0 auto;
   }
 
   .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*
+    REF: Responsive without media-queries! 😄
+    https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+    */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
     align-content: start;
     min-height: calc(100vh - 8em); /* removes header and footer height */
     margin: 0;

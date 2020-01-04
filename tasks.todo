@@ -1,11 +1,13 @@
 # BNB.RUECHAPPE.FR
 
 ## SVELTE
-☐ see how to make a store with json
+✔ see how to use json with an API call or what that is @done (1/3/2020, 5:39:18 PM)
 ☐ create card component
-☐ get the json in those components with a #each
+✔ get the json in those components with a #each @done (1/3/2020, 5:39:13 PM)
+
 
 ## CSS
 ☐ use grid CSS
 ☐ make a digicode password?
+☐ store name and login in cookie or somewhere else?
 

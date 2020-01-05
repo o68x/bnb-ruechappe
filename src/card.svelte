@@ -1,6 +1,6 @@
 <style>
   .card {
-    margin: 10px;
+    padding: 10px;
   }
 </style>
 <div class="card">

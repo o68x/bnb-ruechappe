@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'TT2020';
+  src: url('./assets/fonts/TT2020StyleE-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('./assets/fonts/TT2020StyleE-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TT2020';
+  src: url('./assets/fonts/TT2020StyleB-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+			 url('./assets/fonts/TT2020StyleB-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-weight: bold;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -8,7 +22,7 @@ body {
 	color: #333;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: 'TT2020', Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .test {

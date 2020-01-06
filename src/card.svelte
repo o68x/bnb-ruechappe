@@ -1,9 +1,13 @@
+<script>
+  import 'wired-elements';
+</script>
+
 <style>
-  .card {
-    padding: 10px;
+  wired-card {
   }
 </style>
-<div class="card">
-  <b><slot name="title"></slot></b><br />
-  <slot name="body"></slot>
-</div>
+
+<wired-card>
+  <h3><slot name="title"></slot></h3><br />
+  <p><slot name="body"></slot></p>
+</wired-card>

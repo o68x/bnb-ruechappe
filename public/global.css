@@ -1,14 +1,18 @@
+:root {
+	--highlight: brown;
+}
+
 @font-face {
   font-family: 'TT2020';
-  src: url('./assets/fonts/TT2020StyleE-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('./assets/fonts/TT2020StyleE-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('./assets/fonts/TT2020StyleD-Regular.woff2') format('woff2'),
+			 url('./assets/fonts/TT2020StyleD-Regular.ttf')  format('truetype');
 	font-weight: normal;
 }
 
 @font-face {
   font-family: 'TT2020';
-  src: url('./assets/fonts/TT2020StyleB-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-			 url('./assets/fonts/TT2020StyleB-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('./assets/fonts/TT2020StyleE-Regular.woff2') format('woff2'),
+			 url('./assets/fonts/TT2020StyleE-Regular.ttf')  format('truetype');
 	font-weight: bold;
 }
 
@@ -26,5 +30,5 @@ body {
 }
 
 .test {
-	color: red;
+	color: var(--highlight);
 }

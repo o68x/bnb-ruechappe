@@ -1,15 +1,15 @@
 <style>
   footer {
-    display: flex;
     height: 3em;
-    background-color: orange;
+    margin-top: 20px;
     }
-  footer > * {
-    margin: 0;
-    padding: 0;
-    }
+  footer > p {
+    padding-left: 10px;
+  }
 </style>
 
+
 <footer>
+  <wired-divider></wired-divider>
   <p>Made with ❤ in Paris</p>
 </footer>

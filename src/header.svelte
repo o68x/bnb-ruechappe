@@ -5,12 +5,15 @@
     align-items: center;
     justify-content: space-evenly;
     background-image: url('../assets/chappe.jpg');
-    /* TODO: Add some form of parallax here */
+    /* TODO: Add some form of parallax here? */
     background-size: cover;
     height: 6em;
     padding: 0.5em 0 1em 0;
+    margin-bottom: 20px;
   }
-
+  h1 {
+    color: var(--highlight);
+  }
 </style>
 
 <header>
